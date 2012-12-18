@@ -1,0 +1,2 @@
+CharField	models.py	/^    type=models.CharField(max_length=16)$/
+myfilterForm	views.py	/^    form = myfilterForm(request.POST or None)$/

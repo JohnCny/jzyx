@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>精准营销系统</title>
+
+<style type="text/css">
+	body{
+		margin:15px;}
+	div{margin:auto;}
+	p{
+		text-align:center;}
+	#main{
+		height:95%;
+		width:95%;}
+	#leftmain{
+		width:30%;
+		float:left;}
+	#rightmain{
+		width:70%;
+		float:left}
+	#tr{
+		height:40px;}
+	#td_title{
+		padding-top:3px;
+		text-align:left;
+		width:15%;
+		float:left;}
+	#td_content{
+		float:left;
+		width:70%;}
+	.textbox{
+		height:18px;}
+	.selectbox{
+		height:18px;
+		width:100px;}
+</style>
+</head>
+
+<body>
+<form action="/commit/" method="post">
+<div id="main">
+  <div id="center"><p>系统参数设置</p></div>
+  
+  <div id="leftmain">
+ 		1
+  </div>
+  <div id="rightmain">
+  		<div id="tr">
+        	<div id="td_title">级别</div>
+            <div id="td_content"><select  id="level_no" class="selectbox"></select></div>
+        </div>
+  		<div id="tr">
+        	<div id="td_title">存款量</div>
+            <div id="td_content"><input type="text" id="deposit"  class="textbox"/></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">贷款量</div>
+            <div id="td_content"><input type="text" id="credit" class="textbox"/></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">借记卡积分</div>
+        	<div id="td_content"><input type="text" id="dintegration" class="textbox"/></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">贷记卡积分</div>
+            <div id="td_content"><input type="text" id="cintegration" class="textbox"/></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">理财产品额</div>
+            <div id="td_content"><input type="text" id="amountoffp" class="textbox"/></div>
+        </div>
+         <div id="tr">
+        	<div id="td_title">选择宣传渠道</div>
+            <div id="td_content"><select id="type" class="selectbox"></select></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">上传文件</div>
+            <div id="td_content"><input type="file" id="path" class="textbox"/></div>
+        </div>
+         <div id="tr">
+            <div id="td_content"><input type="submit"  id="confirm" value="确认"/></div>
+        </div><!--
+        {% if errors %}
+        <ul>
+            {% for error in errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+  		{% endif %}
+  --></div>
+</div>
+</form>
+</body>
+</html>

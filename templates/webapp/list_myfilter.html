@@ -1,0 +1,58 @@
+
+{% extends "base.html" %}
+
+{% block title %}系统参数修改-乾康科技 {% endblock %}
+
+{% block content %} 
+<div class="container">     
+    <div class="page-header">  
+    <h2>系统参数修改</h2>  
+	</div> 
+<div id="main">
+  <div id="rightmain">
+  		<div id="tr" class="rows">
+        	<div id="td_title">级别</div>
+            <div id="td_content"><select  id="level_no" class="selectbox"></select></div>
+        </div>
+  		<div id="tr">
+        	<div id="td_title">存款量</div>
+            <div id="td_content"><input type="text" id="deposit"  class="textbox"/></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">贷款量</div>
+            <div id="td_content"><input type="text" id="credit" class="textbox"/></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">借记卡积分</div>
+        	<div id="td_content"><input type="text" id="dintegration" class="textbox"/></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">贷记卡积分</div>
+            <div id="td_content"><input type="text" id="cintegration" class="textbox"/></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">理财产品额</div>
+            <div id="td_content"><input type="text" id="amountoffp" class="textbox"/></div>
+        </div>
+         <div id="tr">
+        	<div id="td_title">选择宣传渠道</div>
+            <div id="td_content"><select id="type" class="selectbox"></select></div>
+        </div>
+        <div id="tr">
+        	<div id="td_title">上传文件</div>
+            <div id="td_content"><input type="file" id="path" class="textbox"/></div>
+        </div>
+         <div id="tr">
+            <div id="td_content"><input type="submit"  id="confirm" value="确定"/></div>
+        </div>
+        {% if errors %}
+        <ul>
+            {% for error in errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+  		{% endif %}
+  </div>
+</div>
+</div>
+{% endblock %}  
