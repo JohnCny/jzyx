@@ -5,7 +5,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Johnny', 'jianghanshi@vip.qq.com'),
+    # ('XXX', 'xxm'),
 )
 
 MANAGERS = ADMINS
